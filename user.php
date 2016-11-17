@@ -3,6 +3,8 @@
    include('sessionUser.php');
 ?>
 
+
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -49,14 +51,33 @@
 							echo "Detallado" . "<br>" . "<br>";
 					 ?>
 				</div>
-				<br>
+				<br><br>
 				<p class="info">¿Tienes alguna pregunta?</p>
-				<textarea></textarea>
-				<button id="enviar">Enviar</button>
-				<button id="llamar">Llamar</button>
+				<form method="post">
+                                <textarea name="question" rows="7" ></textarea>
+                                <button id="enviar" type="submit">Enviar</button>
+                                </form>
+                                <?php  
+                                if (isset($_REQUEST['question']))  {            
+                                // El mensaje
+                                $msg = "from: ".$qrow["correo"]."\n";
+                                $msg = $msg."\n".$_REQUEST['question'];
+                                // se utiliza wordwrap() si las líneas son más largas que 70 caracteres.
+                                $msg = wordwrap($msg,70);
+                                $subject = $qrow["noSiniestro"];
+
+                                // Enviar el correo
+                                mail("serviautogdlwebapp@gmail.com","$subject",$msg);
+                                }
+                                ?>
+                                <button id="llamar" onclick="phone()">Llamar</button>
 			</div>
 		</div>
 	</div>
-
+<script>
+function phone() {
+    alert("Comunícate con nosotros: \n 38127599 ");
+}
+</script>
 </body>
 </html>
