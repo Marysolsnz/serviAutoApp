@@ -1,0 +1,119 @@
+html {
+    height: 100%;
+    font-family: "Avenir Next" !important;
+    font-size: 17px; 
+
+}
+body {
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background: #bad317; /* For browsers that do not support gradients */
+  	background: -webkit-linear-gradient(left top, #bad317, #67c8e2); /* For Safari 5.1 to 6.0 */
+  	background: -o-linear-gradient(bottom right, #bad317, #67c8e2); /* For Opera 11.1 to 12.0 */
+  	background: -moz-linear-gradient(bottom right, #bad317, #67c8e2); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(to bottom right, #bad317, #67c8e2); /* Standard syntax */
+}
+
+h2{
+  padding-left: 2em;
+  padding-top: 1em;
+  color: #4F4F4F;
+}
+
+progress{
+  width: 40%;
+
+}
+
+textarea {
+   resize: none;
+   width: 60%;
+   height: 18%;
+
+   font-family: "Avenir Next" !important;
+   font-size: 17px;
+
+   float: left;
+}
+
+button{
+  font-family: "Avenir Next" !important;
+  font-size: 17px;
+  width: 20%;
+  margin-left: 10px;
+  border-radius: 1em;
+}
+
+.contenedor{
+  background-color: #FEFCFD;
+  border-radius: 1.8em;
+  height: 95%;
+  width: 95%;
+
+  margin: 0 auto;
+  margin-top: 15px;
+}
+
+.photo{
+  width: 30vw  !important;
+  height: 30vh  !important;
+
+  border-radius: .5em;
+} 
+
+.texto{
+  padding-left: 3.1em;
+  height: 100%;
+}
+
+.info{
+  color:#089DAC;
+}
+
+.areas{
+  color: #CEDD81;
+  font-size: 20px; 
+  font-weight: 500;
+  padding-top: 1em;
+}
+
+.pendientes{
+  width: 70%;
+  height: 35%;
+  border: 2px solid #CEDD81;
+  border-radius: 1em;
+
+  padding-left: 1em;
+}
+
+
+.left{
+  float: left;
+  height: 99%;
+  width: 50%; 
+
+}
+
+.right{
+  float: left;
+  height: 99%;
+  width: 50%;
+}
+
+#enviar{
+  background-color: #bad317;
+}
+
+#llamar{
+  background-color: #67c8e2;
+}
+
+#salir{
+  clear: both;
+  padding-left: 5em;
+}
+
+
+

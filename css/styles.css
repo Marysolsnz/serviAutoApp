@@ -1,0 +1,59 @@
+html {
+    height: 100%;
+    font-family: "Avenir Next" !important;
+    font-size: 17px; 
+
+}
+body {
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background: #bad317; /* For browsers that do not support gradients */
+  	background: -webkit-linear-gradient(left top, #bad317, #67c8e2); /* For Safari 5.1 to 6.0 */
+  	background: -o-linear-gradient(bottom right, #bad317, #67c8e2); /* For Opera 11.1 to 12.0 */
+  	background: -moz-linear-gradient(bottom right, #bad317, #67c8e2); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(to bottom right, #bad317, #67c8e2); /* Standard syntax */
+}
+
+input{
+	width: 80%;
+	font-family: "Avenir Next" !important;
+	font-size: 14px;
+	
+}
+
+.button{
+	font-family: "Avenir Next" !important;
+	font-size: 14px;
+	width: 40%;
+	height: 35px;
+	border-radius: .5em;
+
+	position: relative;
+	left: 20%;
+}
+
+.error{
+	font-family: "Avenir Next" !important;
+	font-size: 14px;
+	color:#cc0000;
+}
+
+#login{
+	box-shadow: 5px 5px 5px #585858;
+	background-color: #FEFCFD;
+	border-radius: 1.8em;
+	height: 60%;
+	width: 24%;
+
+	position: absolute;
+	left: calc(50% - 12%);
+	top: 25%;
+	
+}
+
+#contenedor{
+	padding-left: 3em;
+	padding-top: 4em;
+}
